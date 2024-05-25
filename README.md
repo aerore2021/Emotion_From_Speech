@@ -11,6 +11,12 @@ MFCC Feature extraction aided by https://studio.edgeimpulse.com
 - FFT length: 512
 
 ## Model Settings
-**for edge computing, remember profile int8 model.**
-Input layer(3200 features) -> Reshape(80 columns) -> 1D conv/pooling layer(8 neurons, 3 kernel size) -> Dropout(25%) -> 1D conv/pooling layer(16 neurons, 3 kernel size) -> Dropout(25%) -> 1D conv/pooling layer(16 neurons, 3 kernel size) -> Dropout(25%) -> 1D conv/pooling layer(16 neurons, 3 kernel size) -> Dropout(25%) -> Flatten -> Output (4 classes)
+**for edge computing, remember profile int8 model.**  
+Input layer(3200 features) -> Reshape(80 columns) ->   
+1D conv/pooling layer(8 neurons, 3 kernel size) -> Dropout(25%) ->   
+1D conv/pooling layer(16 neurons, 3 kernel size) -> Dropout(25%) ->   
+1D conv/pooling layer(16 neurons, 3 kernel size) -> Dropout(25%) ->   
+1D conv/pooling layer(16 neurons, 3 kernel size) -> Dropout(25%) -> Flatten -> 
+Output (4 classes)  
+
 Accuracy: 97.7%
