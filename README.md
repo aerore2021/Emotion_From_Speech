@@ -19,4 +19,6 @@ Input layer(3200 features) -> Reshape(80 columns) ->
 1D conv/pooling layer(16 neurons, 3 kernel size) -> Dropout(25%) -> Flatten -> 
 Output (4 classes)  
 
-## Accuracy: 97.7%
+### Accuracy: 97.7%
+
+## Connect to a LLM API, and get variable responces.
